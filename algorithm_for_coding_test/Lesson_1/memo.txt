@@ -1,0 +1,85 @@
+Lesson 1 : List, Stack, Queue
+
+Time Complexity : time consuming depend on quanity of data
+
+conignuous data structure : store every data in one memory chunk ( Base Addr + index*(sizeof(type)))
+
+Linked data structure : Node(data + next/prev addr)
+
+Restraint of C style array
+1. Memmory alloc, free must be done by user, which might cause memory leakage
+2. [] operator cannot refer to index larger than user defined index size
+3. multiple array might be complex, cause difficulty to understand code
+4. deep copy is not the basic option, if users want it, they need to make it
+
+
+std::copy(addr start, addr last(not included), buffer start);
+
+
+visual studio debug :
+
+한 단계씩 코드 실행 : F11
+프로시저 단위 실행 : F10
+커서의 위치까지 디버깅 진행 : Ctrl + F10
+오류메시지가 발생한 줄로 이동 : F4
+디버그 중단 : Shift + F5
+디버그 다시 시작 : Ctrl + Shift + F5
+중단점 설정하기 : F9
+모든 중단점 삭제 : Ctrl + Shift + F9
+
+
+std::vector : std::array + utility
+ex) if indexes are already full -> allocate new size of memeory 2*prev_size(), copy all
+function :
+push_back(), insert() = emplace_back(), emplace()
+clear()
+reserve()
+shrink_to_fit()
+
+
+
+std::forward_list : basice linked list + additional utility
+push_front() : insert new node in front of first component
+pop_front() : erase first component
+insert_after() : insert new component after parameter pointer
+erase_after() : erase component after parameter pointer
+remove() : remove components that have user defined value
+remove_if() : simular to remove(), but much more flexible 
+sort() : std::greater<>, std::less<>
+reverse() : reverse components
+unique() : delete duplicated component
+advance() : iterator + distance
+next() : iterator + distance
+prev() : iterator - distance
+
+
+
+std::list : double linked list, provide more functions than forward_list
+push_front() : insert new node in front of first component
+pop_front() : erase first component
+insert_after() : insert new component after parameter pointer
+erase_after() : erase component after parameter pointer
+	... + reverse dir utilities
+
+
+
+bi-dir iterator : both next, prev
+
+iterator : is acutally pointer, if list structur has been changed, user must re-define iterator
+
+
+std::deque : stack + queue
+push_front, push_back, pop_front, pop_back : O(1)
+insert, remove : O(n)
+
+
+
+std::stack : FILO
+
+
+
+std::queue : FIFO
+
+
+
+std::priority_queue : heap structure (basic structure : vector), heapify algorithm is needed

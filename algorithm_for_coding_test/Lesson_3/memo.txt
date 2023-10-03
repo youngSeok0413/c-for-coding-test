@@ -1,0 +1,33 @@
+3. Hash table, Bloom filter
+
+look up problem : millions of data, even if using tree, it will take lots of time
+
+
+
+Hashing :  represent data using unique code (Hash function)
+
+if data[x] != false -> exist, x is hash value, but sometimes x1 != x2, f(x1) = f(x2)(called collision)
+
+chaining : if there is collision, save all data that collided
+
+load factor = key_num / size_of_hash_table
+
+how to avoid collision
+
+1. chaining
+2. open addressing : if specific hash has already data, than find empty space in the table
+	linear probing : next -> next
+	quadratic probbing : hash(x + 2^2)
+	cuckoo hashing : complete hashing method : cuckoo kick out other chicks
+
+	use two hash tables. 
+	each table has different hashing method.
+	Every components can exist on one of the tables, or both tables, which decided by hash functions
+
+Bloom filter : hash table provide qualified solution that also guarantee high memory efficiency, 
+	but there is a danger that it can provide uncertain result. 
+	Bloom filter guarantee there is no false negative, but not false positive
+	
+	Bloom filter use more than three tables. They do not store data, but they store bool types.
+		-> for the key, boolom filter search every space that related to key, if all bits are true, return true, else return false
+

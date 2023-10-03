@@ -1,0 +1,51 @@
+Lesson 2 : Tree, Heap, Graph
+
+
+
+Graph : Node + Edge
+Tree : Graph that has hirarchey
+
+
+
+pre-order traversal : present node -> left sub-node -> right sub-node
+in-order traversal : left-sub node -> present node -> right-sub node
+post-order traversal : left sub-node -> right sub-node -> present node
+level order traversal : from top to bottom, left node to right node
+
+
+
+Binary Search Tree : this tree has the characteristics below
+	1. parent's node >= left-child node
+	2. parent's node <= right-child node
+
+O(logN) : search and insert
+
+
+
+Balanced tree : think about doing search the node that has specific data user wants,
+	in the worst case, it may takes O(N)(when tree is exactly same as one direction linked list),
+	What we want is guarantee search time takes O(logN)
+
+Height-balanced BST : key point is keeping balance when there is insert or remove
+
+N-ary tree : tree that nodes has N children (N >= 2)
+
+
+
+Heap : heap needs to guarantee those characteristics bellow
+	1. O(1) for access data
+	2. O(logN) for insert component
+	3. O(logN) for delete data
+
+Complete binary tree is qualified choice for consisting tree
+
+	complete binary tree : except last level nodes, all nodes have two child nodes + last nodes must be sorted from left
+
+max heap, min heap : root node must be larger or smaller than child nodes
+
+*** Graph : tree only represent hierarchical data, the way that each nodes connected can be various
+	also edge can have its own data, for example direction(undirected, directed), weight(unweighted, weighted) etc
+	
+using matrix it is easy to access each nodes,but require lots of memory to store data(N x N)
+
+using adjacency list, user can store graph using much less memory than using matrix
