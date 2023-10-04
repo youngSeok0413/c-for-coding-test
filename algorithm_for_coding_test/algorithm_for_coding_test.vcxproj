@@ -22,9 +22,10 @@
     <Text Include="Lesson_1\memo.txt" />
     <Text Include="Lesson_2\memo.txt" />
     <Text Include="Lesson_3\memo.txt" />
+    <Text Include="Lesson_4\memo.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lesson_3\exercise_17\ex17.cpp" />
+    <ClCompile Include="Lesson_4\exercise_19\ex19.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

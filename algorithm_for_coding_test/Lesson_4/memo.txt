@@ -1,0 +1,10 @@
+4. Divide and Conquer
+
+algorithm : way to solve problem
+	data + sequence of data transition = solving problem
+
+NP problem : 
+EXPIME : 
+PSPACE : 
+
+bineary search, quick sort, merge sort, matrix product, fft, skyline algorithm

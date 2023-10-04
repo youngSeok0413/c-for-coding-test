@@ -1,0 +1,15 @@
+﻿  ex18.cpp
+D:\workspace\vs_workspace\algorithm_for_coding_test\algorithm_for_coding_test\Lesson_4\exercise_18\ex18.cpp(27,32): warning C4244: 'argument': conversion from 'double' to 'const __int64', possible loss of data
+D:\SDK\visual_studio\VC\Tools\MSVC\14.29.30133\include\xutility(1497,19): warning C4244: 'argument': conversion from '_Diff' to 'const __int64', possible loss of data
+          with
+          [
+              _Diff=double
+          ]
+D:\workspace\vs_workspace\algorithm_for_coding_test\algorithm_for_coding_test\Lesson_4\exercise_18\ex18.cpp(32): message : see reference to function template instantiation 'void std::advance<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,double>(_InIt &,_Diff)' being compiled
+          with
+          [
+              _Ty=int,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+              _Diff=double
+          ]
+  algorithm_for_coding_test.vcxproj -> D:\workspace\vs_workspace\algorithm_for_coding_test\x64\Debug\algorithm_for_coding_test.exe
